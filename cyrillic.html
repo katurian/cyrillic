@@ -1,0 +1,641 @@
+<html lang="ru">
+
+<head>
+  <link rel="shortcut icon" href="http://katski.org/android-icon-36x36.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <title>Cyrillic Alphabet</title>
+  <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/semantic.css">
+
+  <script src="https://semantic-ui.com/dist/semantic.js"></script>
+
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="content-language" content="ru">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <br>
+  <br>
+  <h1 class="ui center aligned header">Cyrillic Phonetics</h1>
+  <br>
+
+  <-- CHARACTER BUTTONS -->
+
+    <div class="three column row">
+      <div class="column">
+        <div class="ui segment"><button onclick="playAudioA();playSentencesA();" type="button">И</button>
+
+          <h3><i>[ee] as in eel</i></h3>
+
+          <h2 id="firsta"></h2>
+
+          <h2 id="seconda"> </h2>
+
+          <h2 id="thirda"> </h2>
+
+          <h2 id="fourtha"> </h2>
+
+          <h2 id="fiftha"> </h2>
+
+          <h2 id="sixtha"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"><button onclick="playAudioB();playSentencesB();" type="button">Й</button>
+          <h3><i>[y] as in boy. ой is [oy] as in in boy. ай is igh as in sigh. уй is [ooi] as in Louis</i></h3>
+
+          <h2 id="firstb"></h2>
+
+          <h2 id="secondb"> </h2>
+
+          <h2 id="thirdb"> </h2>
+
+          <h2 id="fourthb"> </h2>
+
+          <h2 id="fifthb"> </h2>
+
+          <h2 id="sixthb"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="column">
+          <div class="ui segment"> <button onclick="playAudioC();playSentencesC();" type="button">В</button>
+
+            <h3><i>[v] as in vet</i></h3>
+
+            <h2 id="firstc"></h2>
+
+            <h2 id="secondc"> </h2>
+
+            <h2 id="thirdc"> </h2>
+
+            <h2 id="fourthc"> </h2>
+
+            <h2 id="fifthc"> </h2>
+
+            <h2 id="sixthc"> </h2>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui segment"> <button onclick="playAudioD();playSentencesD();" type="button">Б</button>
+            <h3><i>[b] as in bet</i></h3>
+
+            <h2 id="firstd"></h2>
+
+            <h2 id="secondd"> </h2>
+
+            <h2 id="thirdd"> </h2>
+
+            <h2 id="fourthd"> </h2>
+
+            <h2 id="fifthd"> </h2>
+
+            <h2 id="sixthd"> </h2>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui segment"><button onclick="playAudioE();playSentencesE();" type="button">Ф</button>
+            <h3><i>[f] as in fat</i></h3>
+            <h2 id="firste"></h2>
+
+            <h2 id="seconde"> </h2>
+
+            <h2 id="thirde"> </h2>
+
+            <h2 id="fourthe"> </h2>
+
+            <h2 id="fifthe"> </h2>
+
+            <h2 id="sixthe"> </h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioF();playSentencesF();" type="button">Р</button>
+          <h3><i>[r] as in error (rolled as in Scottish English)</i></h3>
+          <h2 id="firstf"></h2>
+
+          <h2 id="secondf"> </h2>
+
+          <h2 id="thirdf"> </h2>
+
+          <h2 id="fourthf"> </h2>
+
+          <h2 id="fifthf"> </h2>
+
+          <h2 id="sixthf"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"><button onclick="playAudioO();playSentencesO();" type="button">З</button>
+          <h3><i>[z] as in zoo</i></h3>
+          <h2 id="firsto"></h2>
+
+          <h2 id="secondo"> </h2>
+
+          <h2 id="thirdo"> </h2>
+
+          <h2 id="fourtho"> </h2>
+
+          <h2 id="fiftho"> </h2>
+
+          <h2 id="sixtho"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="column">
+          <div class="ui segment"><button onclick="playAudioI();playSentencesI();" type="button">Д</button>
+            <h3><i>[d] as in debt</i></h3>
+
+            <h2 id="firsti"></h2>
+
+            <h2 id="secondi"> </h2>
+
+            <h2 id="thirdi"> </h2>
+
+            <h2 id="fourthi"> </h2>
+
+            <h2 id="fifthi"> </h2>
+
+            <h2 id="sixthi"> </h2>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui segment"><button onclick="playAudioJ();playSentencesJ();" type="button">Л</button>
+            <h3><i>[l] as in peop<b>l</b>e</i></h3>
+            <h2 id="firstj"></h2>
+
+            <h2 id="secondj"> </h2>
+
+            <h2 id="thirdj"> </h2>
+
+            <h2 id="fourthj"> </h2>
+
+            <h2 id="fifthj"> </h2>
+
+            <h2 id="sixthj"> </h2>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui segment"><button onclick="playAudioH();playSentencesH();" type="button">Г</button>
+            <h3><i>[g] as in get</i></h3>
+
+            <h2 id="firsth"> </h2>
+
+            <h2 id="secondh"> </h2>
+
+            <h2 id="thirdh"> </h2>
+
+            <h2 id="fourthh"> </h2>
+
+            <h2 id="fifthh"> </h2>
+
+            <h2 id="sixthh"> </h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"><button onclick="playAudioG();playSentencesG();" type="button">П</button>
+          <h3><i>[p] as in pet</i></h3>
+          <h2 id="firstg"> </h2>
+
+          <h2 id="secondg"> </h2>
+
+          <h2 id="thirdg"> </h2>
+
+          <h2 id="fourthg"> </h2>
+
+          <h2 id="fifthg"> </h2>
+
+          <h2 id="sixthg"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioP();playSentencesP();" type="button">А</button>
+          <h3><i>[a] as in f<b>a</b>ther</i></h3>
+          <h2 id="firstp"> </h2>
+
+          <h2 id="secondp"> </h2>
+
+          <h2 id="thirdp"> </h2>
+
+          <h2 id="fourthp"> </h2>
+
+          <h2 id="fifthp"> </h2>
+
+          <h2 id="sixthp"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="column">
+          <div class="ui segment"><button onclick="playAudioK();playSentencesK();" type="button">К</button>
+            <h3><i>[k] as in kangaroo</i></h3>
+            <h2 id="firstk"> </h2>
+
+            <h2 id="secondk"> </h2>
+
+            <h2 id="thirdk"> </h2>
+
+            <h2 id="fourthk"> </h2>
+
+            <h2 id="fifthk"> </h2>
+
+            <h2 id="sixthk"> </h2>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui segment"><button onclick="playAudioL();playSentencesL();" type="button">М</button>
+            <h3><i>[m] as in man</i></h3>
+            <h2 id="firstl"> </h2>
+
+            <h2 id="secondl"> </h2>
+
+            <h2 id="thirdl"> </h2>
+
+            <h2 id="fourthl"> </h2>
+
+            <h2 id="fifthl"> </h2>
+
+            <h2 id="sixthl"> </h2>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui segment"><button onclick="playAudioM();playSentencesM();" type="button">Н</button>
+            <h3><i>[n] as in never</i></h3>
+            <h2 id="firstm"> </h2>
+
+            <h2 id="secondm"> </h2>
+
+            <h2 id="thirdm"> </h2>
+
+            <h2 id="fourthm"> </h2>
+
+            <h2 id="fifthm"> </h2>
+
+            <h2 id="sixthm"> </h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioN();playSentencesN();" type="button">Х</button>
+          <h3><i>[h] pronounced like the ch in Scots loch or German Bach</i></h3>
+
+          <h2 id="firstn"> </h2>
+
+          <h2 id="secondn"> </h2>
+
+          <h2 id="thirdn"> </h2>
+
+          <h2 id="fourthn"> </h2>
+
+          <h2 id="fifthn"> </h2>
+
+          <h2 id="sixthn"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioQ();playSentencesQ();" type="button">О</button>
+          <h3><i>[o] as in bottle. Unstressed is closer to [a]</i></h3>
+          <h2 id="firstq"> </h2>
+
+          <h2 id="secondq"> </h2>
+
+          <h2 id="thirdq"> </h2>
+
+          <h2 id="fourthq"> </h2>
+
+          <h2 id="fifthq"> </h2>
+
+          <h2 id="sixthq"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioR();playSentencesR();" type="button">У</button>
+          <h3><i>[oo] as in boot</i></h3>
+          <h2 id="firstr"> </h2>
+
+          <h2 id="secondr"> </h2>
+
+          <h2 id="thirdr"> </h2>
+
+          <h2 id="fourthr"> </h2>
+
+          <h2 id="fifthr"> </h2>
+
+          <h2 id="sixthr"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioS();playSentencesS();" type="button">Э</button>
+          <h3><i>[e] as in fed</i></h3>
+          <h2 id="firsts"> </h2>
+
+          <h2 id="seconds"> </h2>
+
+          <h2 id="thirds"> </h2>
+
+          <h2 id="fourths"> </h2>
+
+          <h2 id="fifths"> </h2>
+
+          <h2 id="sixths"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioT();playSentencesT();" type="button">Ы</button>
+          <h3><i>[i] as in bit, with the tongue tip further back</i></h3>
+          <h2 id="firstt"> </h2>
+
+          <h2 id="secondt"> </h2>
+
+          <h2 id="thirdt"> </h2>
+
+          <h2 id="fourtht"> </h2>
+
+          <h2 id="fiftht"> </h2>
+
+          <h2 id="sixtht"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioU();playSentencesU();" type="button">Я</button>
+          <h3><i>[ya] as in yak</i></h3>
+
+          <h2 id="firstu"> </h2>
+
+          <h2 id="secondu"> </h2>
+
+          <h2 id="thirdu"> </h2>
+
+          <h2 id="fourthu"> </h2>
+
+          <h2 id="fifthu"> </h2>
+
+          <h2 id="sixthu"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioV();playSentencesV();" type="button">Ю</button>
+          <h3><i>[yoo] as in universe</i></h3>
+
+          <h2 id="firstv"> </h2>
+
+          <h2 id="secondv"> </h2>
+
+          <h2 id="thirdv"> </h2>
+
+          <h2 id="fourthv"> </h2>
+
+          <h2 id="fifthv"> </h2>
+
+          <h2 id="sixthv"> </h2>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment"> <button onclick="playAudioW();playSentencesW();" type="button">Е</button>
+          <h3><i>[ye] as in yes</i></h3>
+
+          <h2 id="firstw"> </h2>
+
+          <h2 id="secondw"> </h2>
+
+          <h2 id="thirdw"> </h2>
+
+          <h2 id="fourthw"> </h2>
+
+          <h2 id="fifthw"> </h2>
+
+          <h2 id="sixthw"> </h2>
+
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui segment"><button onclick="playAudioX();playSentencesX();" type="button">Ё</button>
+        <h3><i>[yo] as in yonder</i></h3>
+
+        <h2 id="firstx"> </h2>
+
+        <h2 id="secondx"> </h2>
+
+        <h2 id="thirdx"> </h2>
+
+        <h2 id="fourthx"> </h2>
+
+        <h2 id="fifthx"> </h2>
+
+        <h2 id="sixthx"> </h2>
+
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui segment"><button onclick="playAudioY();playSentencesY();" type="button"></button>
+
+        <h2 id="firsty"> </h2>
+
+        <h2 id="secondy"> </h2>
+
+        <h2 id="thirdy"> </h2>
+
+        <h2 id="fourthy"> </h2>
+
+        <h2 id="fifthy"> </h2>
+
+        <h2 id="sixthy"> </h2>
+
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui segment"> <button onclick="playAudioXY();playSentencesXY();" type="button"></button>
+        <h2 id="firstxy"> </h2>
+
+        <h2 id="secondxy"> </h2>
+
+        <h2 id="thirdxy"> </h2>
+
+        <h2 id="fourthxy"> </h2>
+
+        <h2 id="fifthxy"> </h2>
+
+        <h2 id="sixthxy"> </h2>
+
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui segment"> <button onclick="playAudioZ();playSentencesZ();" type="button"></button>
+        <h2 id="firstz"> </h2>
+
+        <h2 id="secondz"> </h2>
+
+        <h2 id="thirdz"> </h2>
+
+        <h2 id="fourthz"> </h2>
+
+        <h2 id="fifthz"> </h2>
+
+        <h2 id="sixthz"> </h2>
+
+      </div>
+    </div>
+
+    <-- AUDIO SOURCES -->
+
+      <audio id="myAudioA">
+                <source src="http://katski.org/И.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioB">
+                <source src="http://katski.org/Й.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioC">
+                <source src="http://katski.org/В.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioD">
+                <source src="http://katski.org/Д.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioE">
+                <source src="http://katski.org/Ф.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioF">
+                <source src="http://katski.org/Р.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioG">
+                <source src="http://katski.org/П.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioH">
+                <source src="http://katski.org/Г.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioI">
+                <source src="http://katski.org/right.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioJ">
+                <source src="http://katski.org/fuck.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioK">
+                <source src="http://katski.org/К.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioL">
+                <source src="http://katski.org/М.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioM">
+                <source src="http://katski.org/Н.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioN">
+                <source src="http://katski.org/Х.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioO">
+                <source src="http://katski.org/З.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioP">
+                <source src="http://katski.org/А.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioQ">
+                <source src="http://katski.org/О.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioR">
+                <source src="http://katski.org/У.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioS">
+                <source src="http://katski.org/Э.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioT">
+                <source src="http://katski.org/Ы.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioU">
+                <source src="http://katski.org/Я.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioV">
+                <source src="http://katski.org/Ю.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioW">
+                <source src="http://katski.org/Е.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <audio id="myAudioX">
+                <source src="http://katski.org/Ё.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+
+      <-- STYLING -->
+
+        <style>
+          button {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 20px 42px;
+            text-align: right;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-family: 'Noto Sans', sans-serif;
+          }
+
+          h2 {
+            font-family: 'Noto Sans', sans-serif;
+            text-align: center;
+            font-size: 55px;
+          }
+
+          h1 {
+            padding: 20px 42px;
+            font-family: 'Noto Sans', sans-serif;
+            text-align: center;
+            font-size: 60px !important;
+          }
+
+          h3 {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 25px;
+          }
+        </style>
+
+</body>
+
+</html>
